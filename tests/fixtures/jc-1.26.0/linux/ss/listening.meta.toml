@@ -1,0 +1,4 @@
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+parser = "ss"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (ss -a and ss -tulpn merged by hand for coverage)"

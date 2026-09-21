@@ -1,0 +1,7 @@
+  UNIT                              LOAD      ACTIVE   SUB       DESCRIPTION
+  proc-sys-fs-binfmt_misc.automount loaded    active   running   Arbitrary Executable File Formats File System Automount Point
+  sshd.service                      loaded    active   running   OpenSSH Daemon
+● nfs-server.service                not-found inactive dead      nfs-server.service
+
+Legend: LOAD   → Reflects whether the unit definition was properly loaded.
+LOAD   = Reflects whether the unit definition was properly loaded.

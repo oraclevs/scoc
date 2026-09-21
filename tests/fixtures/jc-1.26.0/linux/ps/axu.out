@@ -1,0 +1,2 @@
+USER PID %CPU %MEM VSZ RSS TTY STAT START TIME COMMAND
+root 1 0.5 1.2 100 50 ? Ss 10:00 0:01 /sbin/init --system

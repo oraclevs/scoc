@@ -1,0 +1,1228 @@
+[baseline]
+project = "jc"
+version = "1.26.0"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+
+[parsers.acpi]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "acpi"
+
+[parsers.airport]
+status = "unported"
+platforms = ["macos"]
+raw = true
+streaming = true
+jc_standard = "airport"
+jc_streaming = "airport-s"
+
+[parsers.amixer]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "amixer"
+
+[parsers.apt-cache-show]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "apt-cache-show"
+
+[parsers.apt-get-sqq]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "apt-get-sqq"
+
+[parsers.arp]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "arp"
+
+[parsers.asciitable]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "asciitable"
+
+[parsers.asciitable-m]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "asciitable-m"
+
+[parsers.authorized-keys]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "authorized-keys"
+
+[parsers.blkid]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "blkid"
+
+[parsers.bluetoothctl]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "bluetoothctl"
+
+[parsers.cbt]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "cbt"
+
+[parsers.cef]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "cef"
+jc_streaming = "cef-s"
+
+[parsers.certbot]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "certbot"
+
+[parsers.chage]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "chage"
+
+[parsers.cksum]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "cksum"
+
+[parsers.clf]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "clf"
+jc_streaming = "clf-s"
+
+[parsers.crontab]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "crontab"
+
+[parsers.crontab-u]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "crontab-u"
+
+[parsers.csv]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "csv"
+jc_streaming = "csv-s"
+
+[parsers.csv-ih]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "csv-ih"
+jc_streaming = "csv-ih-s"
+
+[parsers.curl-head]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "curl-head"
+
+[parsers.date]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "date"
+
+[parsers.datetime-iso]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "datetime-iso"
+
+[parsers.debconf-show]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "debconf-show"
+
+[parsers.df]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "df"
+
+[parsers.dig]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "dig"
+
+[parsers.dir]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "dir"
+
+[parsers.dmidecode]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "dmidecode"
+
+[parsers.dpkg-l]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "dpkg-l"
+
+[parsers.du]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "du"
+
+[parsers.efibootmgr]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "efibootmgr"
+
+[parsers.email-address]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "email-address"
+
+[parsers.env]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "env"
+
+[parsers.ethtool]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ethtool"
+
+[parsers.file]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "file"
+
+[parsers.find]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "find"
+
+[parsers.findmnt]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "findmnt"
+
+[parsers.finger]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "finger"
+
+[parsers.free]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "free"
+
+[parsers.fstab]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "fstab"
+
+[parsers.getfacl]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "getfacl"
+
+[parsers.git-diff]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "git-diff"
+
+[parsers.git-log]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "git-log"
+jc_streaming = "git-log-s"
+
+[parsers.git-ls-remote]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "git-ls-remote"
+
+[parsers.gpg]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "gpg"
+
+[parsers.group]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "group"
+
+[parsers.gshadow]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "gshadow"
+
+[parsers.hash]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "hash"
+
+[parsers.hashsum]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "hashsum"
+
+[parsers.hciconfig]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "hciconfig"
+
+[parsers.history]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "history"
+
+[parsers.host]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "host"
+
+[parsers.hosts]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "hosts"
+
+[parsers.http-headers]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "http-headers"
+
+[parsers.id]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "id"
+
+[parsers.ifconfig]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ifconfig"
+
+[parsers.iftop]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "iftop"
+
+[parsers.ini]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ini"
+
+[parsers.ini-dup]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ini-dup"
+
+[parsers.iostat]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "iostat"
+jc_streaming = "iostat-s"
+
+[parsers.ip-address]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ip-address"
+
+[parsers.ipconfig]
+status = "deferred-windows"
+platforms = ["windows"]
+raw = true
+streaming = false
+jc_standard = "ipconfig"
+
+[parsers.iptables]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "iptables"
+
+[parsers.ip-route]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ip-route"
+
+[parsers.iw-scan]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "iw-scan"
+
+[parsers.iwconfig]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "iwconfig"
+
+[parsers.jar-manifest]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "jar-manifest"
+
+[parsers.jobs]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "jobs"
+
+[parsers.jwt]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "jwt"
+
+[parsers.kv]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "kv"
+
+[parsers.kv-dup]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "kv-dup"
+
+[parsers.last]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "last"
+
+[parsers.ldd]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ldd"
+
+[parsers.ls]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "ls"
+jc_streaming = "ls-s"
+
+[parsers.lsattr]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lsattr"
+
+[parsers.lsb-release]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lsb-release"
+
+[parsers.lsblk]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lsblk"
+
+[parsers.lsmod]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lsmod"
+
+[parsers.lsof]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lsof"
+
+[parsers.lspci]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lspci"
+
+[parsers.lsusb]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "lsusb"
+
+[parsers.m3u]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "m3u"
+
+[parsers.mdadm]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "mdadm"
+
+[parsers.mount]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "mount"
+
+[parsers.mpstat]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "mpstat"
+jc_streaming = "mpstat-s"
+
+[parsers.needrestart]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "needrestart"
+
+[parsers.netrc]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "netrc"
+
+[parsers.netstat]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "netstat"
+
+[parsers.net-localgroup]
+status = "deferred-windows"
+platforms = ["windows"]
+raw = true
+streaming = false
+jc_standard = "net-localgroup"
+
+[parsers.net-user]
+status = "deferred-windows"
+platforms = ["windows"]
+raw = true
+streaming = false
+jc_standard = "net-user"
+
+[parsers.nmcli]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "nmcli"
+
+[parsers.nsd-control]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "nsd-control"
+
+[parsers.ntpq]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ntpq"
+
+[parsers.openvpn]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "openvpn"
+
+[parsers.os-prober]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "os-prober"
+
+[parsers.os-release]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "os-release"
+
+[parsers.pacman]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "pacman"
+
+[parsers.passwd]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "passwd"
+
+[parsers.path]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "path"
+
+[parsers.path-list]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "path-list"
+
+[parsers.pci-ids]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "pci-ids"
+
+[parsers.pgpass]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "pgpass"
+
+[parsers.pidstat]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = true
+jc_standard = "pidstat"
+jc_streaming = "pidstat-s"
+
+[parsers.ping]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "ping"
+jc_streaming = "ping-s"
+
+[parsers.pip-list]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "pip-list"
+
+[parsers.pip-show]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "pip-show"
+
+[parsers.pkg-index-apk]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "pkg-index-apk"
+
+[parsers.pkg-index-deb]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "pkg-index-deb"
+
+[parsers.plist]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "plist"
+
+[parsers.postconf]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "postconf"
+
+[parsers.proc]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "proc"
+
+[parsers.ps]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ps"
+
+[parsers.resolve-conf]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "resolve-conf"
+
+[parsers.route]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "route"
+
+[parsers.route-print]
+status = "deferred-windows"
+platforms = ["windows"]
+raw = true
+streaming = false
+jc_standard = "route-print"
+
+[parsers.rpm-qi]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "rpm-qi"
+
+[parsers.rsync]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "rsync"
+jc_streaming = "rsync-s"
+
+[parsers.semver]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "semver"
+
+[parsers.sfdisk]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "sfdisk"
+
+[parsers.shadow]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "shadow"
+
+[parsers.srt]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "srt"
+
+[parsers.ss]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ss"
+
+[parsers.ssh-conf]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ssh-conf"
+
+[parsers.sshd-conf]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "sshd-conf"
+
+[parsers.stat]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "stat"
+jc_streaming = "stat-s"
+
+[parsers.swapon]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "swapon"
+
+[parsers.sysctl]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "sysctl"
+
+[parsers.syslog]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "syslog"
+jc_streaming = "syslog-s"
+
+[parsers.syslog-bsd]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "syslog-bsd"
+jc_streaming = "syslog-bsd-s"
+
+[parsers.systemctl]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "systemctl"
+
+[parsers.systemctl-lj]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "systemctl-lj"
+
+[parsers.systemctl-ls]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "systemctl-ls"
+
+[parsers.systemctl-luf]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "systemctl-luf"
+
+[parsers.systeminfo]
+status = "deferred-windows"
+platforms = ["windows"]
+raw = true
+streaming = false
+jc_standard = "systeminfo"
+
+[parsers.time]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "time"
+
+[parsers.timedatectl]
+status = "in-progress"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "timedatectl"
+
+[parsers.timestamp]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "timestamp"
+
+[parsers.toml]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "toml"
+
+[parsers.top]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = true
+jc_standard = "top"
+jc_streaming = "top-s"
+
+[parsers.tracepath]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "tracepath"
+
+[parsers.traceroute]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "traceroute"
+jc_streaming = "traceroute-s"
+
+[parsers.tsv]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "tsv"
+jc_streaming = "tsv-s"
+
+[parsers.tsv-ih]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "tsv-ih"
+jc_streaming = "tsv-ih-s"
+
+[parsers.tune2fs]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "tune2fs"
+
+[parsers.typeset]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "typeset"
+
+[parsers.udevadm]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "udevadm"
+
+[parsers.ufw]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ufw"
+
+[parsers.ufw-appinfo]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "ufw-appinfo"
+
+[parsers.uname]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "uname"
+
+[parsers.update-alt-gs]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "update-alt-gs"
+
+[parsers.update-alt-q]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "update-alt-q"
+
+[parsers.upower]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "upower"
+
+[parsers.upsc]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "upsc"
+
+[parsers.uptime]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "uptime"
+
+[parsers.url]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "url"
+
+[parsers.ver]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "ver"
+
+[parsers.veracrypt]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "veracrypt"
+
+[parsers.vmstat]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = true
+jc_standard = "vmstat"
+jc_streaming = "vmstat-s"
+
+[parsers.w]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "w"
+
+[parsers.wc]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "wc"
+
+[parsers.wg-show]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "wg-show"
+
+[parsers.who]
+status = "in-progress"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "who"
+
+[parsers.x509-cert]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "x509-cert"
+
+[parsers.x509-crl]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "x509-crl"
+
+[parsers.x509-csr]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "x509-csr"
+
+[parsers.xml]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "xml"
+
+[parsers.xrandr]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "xrandr"
+
+[parsers.yaml]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "yaml"
+
+[parsers.zipinfo]
+status = "unported"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+jc_standard = "zipinfo"
+
+[parsers.zpool-iostat]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "zpool-iostat"
+
+[parsers.zpool-status]
+status = "unported"
+platforms = ["linux"]
+raw = true
+streaming = false
+jc_standard = "zpool-status"

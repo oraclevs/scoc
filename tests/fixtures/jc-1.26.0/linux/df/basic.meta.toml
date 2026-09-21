@@ -1,0 +1,4 @@
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+parser = "df"
+provenance = "SCOC deterministic fixture with real df column alignment (not captured from a live host)"

@@ -1,0 +1,15 @@
+[package]
+name = "scoc"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "SPA Command Output Converter"
+
+[dependencies]
+chrono = { version = "0.4", default-features = true }
+regex = "1"
+serde_json = { version = "1", features = ["preserve_order"] }
+thiserror = "2"
+
+[dev-dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }

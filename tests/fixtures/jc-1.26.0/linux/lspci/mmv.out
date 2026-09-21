@@ -1,0 +1,16 @@
+Slot:	00:02.0
+Class:	VGA compatible controller
+Vendor:	Intel Corporation
+Device:	Kaby Lake-R GT2 [UHD Graphics 620]
+SVendor:	Hewlett-Packard Company
+SDevice:	Device 83b2
+Rev:	07
+ProgIf:	00
+
+Slot:	0000:01:00.0
+Class:	Network controller [0280]
+Vendor:	Intel Corporation [8086]
+Device:	Wireless 8265 / 8275 [24fd]
+SVendor:	Intel Corporation [8086]
+SDevice:	Dual Band Wireless-AC 8265 [1010]
+Rev:	78

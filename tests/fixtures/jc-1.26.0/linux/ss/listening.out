@@ -1,0 +1,7 @@
+Netid State  Recv-Q Send-Q      Local Address:Port    Peer Address:Port Process
+nl    UNCONN 78720  0                    rtnl:567898              *
+nl    UNCONN 0      0        rtnl:wpa_supplicant/1132             *
+udp   UNCONN 0      0                 0.0.0.0:68            0.0.0.0:*
+tcp   LISTEN 0      4096            127.0.0.1:631           0.0.0.0:*
+tcp   LISTEN 0      511                  [::]:80                [::]:*
+u_str LISTEN 0      4096 /run/dbus/system_bus_socket 4102 * 0
