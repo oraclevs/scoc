@@ -2,3 +2,7 @@
 /.compat-venv/
 .venv-jc/
 /.worktrees/
+
+# internal-only, never public
+/SCOC_HANDOFF.md
+__pycache__/
