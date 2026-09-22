@@ -3,7 +3,7 @@ name = "scoc"
 version = "0.1.0"
 edition = "2021"
 license = "MIT"
-description = "SPA Command Output Converter"
+description = "Spar Command Output Converter"
 repository = "https://github.com/oraclevs/scoc"
 
 [dependencies]

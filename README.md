@@ -1,6 +1,6 @@
 # SCOC
 
-SCOC is the SPA Command Output Converter: a Rust-native parser library that turns ordinary human-readable command and file output into structured `serde_json::Value` data for Spar/Sparsh.
+SCOC is the Spar Command Output Converter: a Rust-native parser library that turns ordinary human-readable command and file output into structured `serde_json::Value` data for Spar/Sparsh.
 
 ## Parser platform scope
 
