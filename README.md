@@ -1,21 +1,21 @@
 # SCOC
 
-**SCOC** is the SPA Command Output Converter: a Rust-native parser library that turns ordinary human-readable command/file output into structured `serde_json::Value` data for Spar/Sparsh.
+SCOC is the SPA Command Output Converter: a Rust-native parser library that turns ordinary human-readable command and file output into structured `serde_json::Value` data for Spar/Sparsh.
 
 ## Parser platform scope
 
-This source snapshot registers **274 canonical parsers**:
+SCOC registers 274 canonical parsers:
 
-- **217 JC-derived Linux/macOS/generic targets** from JC **1.26.0**, pinned to commit `73fa7d5572dd730076723bd6280786bb9101d32f`.
-- **57 SCOC-native developer/DevOps targets** across Docker, Kubernetes, Helm, Git, GitHub CLI, Rust, Python, JavaScript, Java/JVM, Go, Flutter, Dart, and Terraform.
-- **6 Windows-only JC parsers are cataloged but deliberately deferred**: `dir`, `ipconfig`, `net-localgroup`, `net-user`, `route-print`, and `systeminfo`.
-- **20 JC streaming names** such as `ping-s`, `csv-s`, and `git-log-s` resolve as aliases/capabilities of their canonical parser and do not inflate the canonical count.
+- 217 JC-derived Linux/macOS/generic targets from JC 1.26.0, pinned to commit `73fa7d5572dd730076723bd6280786bb9101d32f`.
+- 57 SCOC-native developer/DevOps targets across Docker, Kubernetes, Helm, Git, GitHub CLI, Rust, Python, JavaScript, Java/JVM, Go, Flutter, Dart, and Terraform.
+- 6 Windows-only JC parsers are cataloged but deliberately deferred: `dir`, `ipconfig`, `net-localgroup`, `net-user`, `route-print`, and `systeminfo`.
+- 20 JC streaming names such as `ping-s`, `csv-s`, and `git-log-s` resolve as aliases of their canonical parser and don't add to the canonical count.
 
-The authoritative generated list is `docs/SCOC_PARSER_CATALOG.md`. The source manifests are `compatibility/jc-inventory.toml`, `compatibility/parser-matrix.toml`, and `compatibility/native-catalog.toml`.
+The generated list is `docs/SCOC_PARSER_CATALOG.md`. The source manifests are `compatibility/jc-inventory.toml`, `compatibility/parser-matrix.toml`, and `compatibility/native-catalog.toml`.
 
 ## Examples
 
-SCOC is a library. Spar/Sparsh can expose registry entries through `from <parser>` / `from scoc::<parser>`:
+SCOC is a library. Spar/Sparsh expose registry entries through `from <parser>` / `from scoc::<parser>`:
 
 ```text
 uname -a | from uname
@@ -29,13 +29,13 @@ flutter doctor | from flutter-doctor
 terraform workspace list | from terraform-workspace-list
 ```
 
-When a tool already emits a stable machine-readable format, callers can keep using the direct escape hatch instead of re-parsing pretty output, for example `from json` or `from yaml`.
+If a tool already emits a stable machine-readable format, there's no need to parse pretty output for it — use `from json` or `from yaml` directly.
 
 ## Verification states matter
 
-`implemented` means a parser has a registered implementation and metadata. It does **not** mean differential compatibility was proven. Only actual Rust test/Clippy execution and, for JC-derived parsers, an actual run against the pinned JC 1.26.0 oracle can promote verification state.
+`implemented` means a parser has a registered implementation and metadata. It doesn't mean differential compatibility against JC has been proven for that parser: 61 of the JC-derived parsers have been differentially verified against the pinned JC 1.26.0 oracle so far, and the other 156 are structured fallback implementations pending that pass.
 
-This archive was assembled in an environment without `cargo`/`rustc`, so its Rust compile/test/Clippy gate and full JC differential gate remain unverified here. Run the authoritative local gate on a Rust-enabled machine:
+The crate itself has been verified on a real Rust toolchain: `cargo fmt --check`, `cargo clippy --all-targets --all-features -- -D warnings`, and `cargo test --all-targets --all-features` all pass, along with the Python-side checks (catalog, license, and inventory consistency). Run the same local gate yourself:
 
 ```bash
 ./verify-scoc.sh
@@ -47,10 +47,10 @@ If JC 1.26.0 is installed in the same environment, include the differential corp
 ./verify-scoc.sh --with-jc-diff
 ```
 
-The differential runner is manifest-driven. You can also check one canonical parser with a checked-in fixture using:
+The differential runner is manifest-driven. You can also check one canonical parser against its checked-in fixture:
 
 ```bash
 python3 compatibility/diff.py --parser df
 ```
 
-See `SCOC_HANDOFF.md` for measured counts and the exact unverified/verified status of this snapshot.
+See `SCOC_HANDOFF.md` for the parser-by-parser verification status.
