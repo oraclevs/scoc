@@ -1,0 +1,5 @@
+{
+  "goarch": "amd64",
+  "goos": "linux",
+  "cgo_enabled": 1
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "parser": "env",
+    "input": "tests/fixtures/jc-1.26.0/generic/env/basic.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "df",
+    "input": "tests/fixtures/jc-1.26.0/linux/df/basic.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "fstab",
+    "input": "tests/fixtures/jc-1.26.0/linux/fstab/basic.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "ls",
+    "input": "tests/fixtures/jc-1.26.0/linux/ls/long.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "lsblk",
+    "input": "tests/fixtures/jc-1.26.0/linux/lsblk/tree.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "lspci",
+    "input": "tests/fixtures/jc-1.26.0/linux/lspci/mmv.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "pacman",
+    "input": "tests/fixtures/jc-1.26.0/linux/pacman/two_records.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "ping",
+    "input": "tests/fixtures/jc-1.26.0/linux/ping/basic.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "ps",
+    "input": "tests/fixtures/jc-1.26.0/linux/ps/axu.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "ss",
+    "input": "tests/fixtures/jc-1.26.0/linux/ss/listening.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "systemctl",
+    "input": "tests/fixtures/jc-1.26.0/linux/systemctl/units.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "timedatectl",
+    "input": "tests/fixtures/jc-1.26.0/linux/timedatectl/status.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  },
+  {
+    "parser": "uname",
+    "input": "tests/fixtures/jc-1.26.0/linux/uname/host.out",
+    "raw": false,
+    "streaming": false,
+    "ignore_errors": false
+  }
+]

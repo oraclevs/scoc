@@ -1,0 +1,16 @@
+[
+  {
+    "status": "ok",
+    "title": "Flutter (Channel stable, 3.x)",
+    "details": [
+      "• Flutter version 3.x"
+    ]
+  },
+  {
+    "status": "warning",
+    "title": "Android toolchain",
+    "details": [
+      "✗ cmdline-tools missing"
+    ]
+  }
+]

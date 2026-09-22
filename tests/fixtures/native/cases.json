@@ -1,0 +1,38 @@
+[
+  {
+    "parser": "pip-freeze",
+    "input": "tests/fixtures/native/python/pip-freeze/contract/pip-freeze.out",
+    "expected": "tests/fixtures/native/python/pip-freeze/contract/pip-freeze.json",
+    "raw": false
+  },
+  {
+    "parser": "go-env",
+    "input": "tests/fixtures/native/go/go-env/contract/go-env.out",
+    "expected": "tests/fixtures/native/go/go-env/contract/go-env.json",
+    "raw": false
+  },
+  {
+    "parser": "terraform-state-list",
+    "input": "tests/fixtures/native/terraform/terraform-state-list/contract/terraform-state-list.out",
+    "expected": "tests/fixtures/native/terraform/terraform-state-list/contract/terraform-state-list.json",
+    "raw": false
+  },
+  {
+    "parser": "terraform-workspace-list",
+    "input": "tests/fixtures/native/terraform/terraform-workspace-list/contract/terraform-workspace-list.out",
+    "expected": "tests/fixtures/native/terraform/terraform-workspace-list/contract/terraform-workspace-list.json",
+    "raw": false
+  },
+  {
+    "parser": "rustup-toolchains",
+    "input": "tests/fixtures/native/rust/rustup-toolchains/contract/rustup-toolchains.out",
+    "expected": "tests/fixtures/native/rust/rustup-toolchains/contract/rustup-toolchains.json",
+    "raw": false
+  },
+  {
+    "parser": "flutter-doctor",
+    "input": "tests/fixtures/native/flutter/flutter-doctor/contract/flutter-doctor.out",
+    "expected": "tests/fixtures/native/flutter/flutter-doctor/contract/flutter-doctor.json",
+    "raw": false
+  }
+]

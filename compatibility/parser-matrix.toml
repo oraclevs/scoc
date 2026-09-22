@@ -4,1225 +4,2029 @@ version = "1.26.0"
 commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
 
 [parsers.acpi]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "acpi"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "acpi"
 
 [parsers.airport]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "airport"
 platforms = ["macos"]
 raw = true
 streaming = true
-jc_standard = "airport"
-jc_streaming = "airport-s"
+streaming_name = "airport-s"
 
 [parsers.amixer]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "amixer"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "amixer"
 
 [parsers.apt-cache-show]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "apt-cache-show"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "apt-cache-show"
 
 [parsers.apt-get-sqq]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "apt-get-sqq"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "apt-get-sqq"
 
 [parsers.arp]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "arp"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "arp"
 
 [parsers.asciitable]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "asciitable"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "asciitable"
 
 [parsers.asciitable-m]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "asciitable-m"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "asciitable-m"
 
 [parsers.authorized-keys]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "authorized-keys"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "authorized-keys"
 
 [parsers.blkid]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "blkid"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "blkid"
 
 [parsers.bluetoothctl]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "bluetoothctl"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "bluetoothctl"
 
 [parsers.cbt]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "cbt"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "cbt"
 
 [parsers.cef]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "cef"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "cef"
-jc_streaming = "cef-s"
+streaming_name = "cef-s"
 
 [parsers.certbot]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "certbot"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "certbot"
 
 [parsers.chage]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "chage"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "chage"
 
 [parsers.cksum]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "cksum"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "cksum"
 
 [parsers.clf]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "clf"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "clf"
-jc_streaming = "clf-s"
+streaming_name = "clf-s"
 
 [parsers.crontab]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "crontab"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "crontab"
 
 [parsers.crontab-u]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "crontab-u"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "crontab-u"
 
 [parsers.csv]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "csv"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "csv"
-jc_streaming = "csv-s"
+streaming_name = "csv-s"
 
 [parsers.csv-ih]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "csv-ih"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "csv-ih"
-jc_streaming = "csv-ih-s"
+streaming_name = "csv-ih-s"
 
 [parsers.curl-head]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "curl-head"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "curl-head"
 
 [parsers.date]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "date"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "date"
 
 [parsers.datetime-iso]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "datetime-iso"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "datetime-iso"
 
 [parsers.debconf-show]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "debconf-show"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "debconf-show"
 
 [parsers.df]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "df"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "df"
 
 [parsers.dig]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "dig"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "dig"
 
 [parsers.dir]
-status = "unported"
-platforms = ["linux", "macos"]
+origin = "jc"
+status = "deferred-windows"
+target = "windows-deferred"
+standard_name = "dir"
+platforms = ["windows"]
 raw = true
 streaming = false
-jc_standard = "dir"
 
 [parsers.dmidecode]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "dmidecode"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "dmidecode"
 
 [parsers.dpkg-l]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "dpkg-l"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "dpkg-l"
 
 [parsers.du]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "du"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "du"
 
 [parsers.efibootmgr]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "efibootmgr"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "efibootmgr"
 
 [parsers.email-address]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "email-address"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "email-address"
 
 [parsers.env]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "env"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "env"
 
 [parsers.ethtool]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ethtool"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ethtool"
 
 [parsers.file]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "file"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "file"
 
 [parsers.find]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "find"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "find"
 
 [parsers.findmnt]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "findmnt"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "findmnt"
 
 [parsers.finger]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "finger"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "finger"
 
 [parsers.free]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "free"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "free"
 
 [parsers.fstab]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "fstab"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "fstab"
 
 [parsers.getfacl]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "getfacl"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "getfacl"
 
 [parsers.git-diff]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "git-diff"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "git-diff"
 
 [parsers.git-log]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "git-log"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "git-log"
-jc_streaming = "git-log-s"
+streaming_name = "git-log-s"
 
 [parsers.git-ls-remote]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "git-ls-remote"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "git-ls-remote"
 
 [parsers.gpg]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "gpg"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "gpg"
 
 [parsers.group]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "group"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "group"
 
 [parsers.gshadow]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "gshadow"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "gshadow"
 
 [parsers.hash]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "hash"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "hash"
 
 [parsers.hashsum]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "hashsum"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "hashsum"
 
 [parsers.hciconfig]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "hciconfig"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "hciconfig"
 
 [parsers.history]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "history"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "history"
 
 [parsers.host]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "host"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "host"
 
 [parsers.hosts]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "hosts"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "hosts"
 
 [parsers.http-headers]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "http-headers"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "http-headers"
 
 [parsers.id]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "id"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "id"
 
 [parsers.ifconfig]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ifconfig"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ifconfig"
 
 [parsers.iftop]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "iftop"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "iftop"
 
 [parsers.ini]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ini"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ini"
 
 [parsers.ini-dup]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ini-dup"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ini-dup"
 
 [parsers.iostat]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "iostat"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "iostat"
-jc_streaming = "iostat-s"
+streaming_name = "iostat-s"
 
 [parsers.ip-address]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ip-address"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ip-address"
-
-[parsers.ipconfig]
-status = "deferred-windows"
-platforms = ["windows"]
-raw = true
-streaming = false
-jc_standard = "ipconfig"
-
-[parsers.iptables]
-status = "in-progress"
-platforms = ["linux"]
-raw = true
-streaming = false
-jc_standard = "iptables"
 
 [parsers.ip-route]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ip-route"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ip-route"
+
+[parsers.ipconfig]
+origin = "jc"
+status = "deferred-windows"
+target = "windows-deferred"
+standard_name = "ipconfig"
+platforms = ["windows"]
+raw = true
+streaming = false
+
+[parsers.iptables]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "iptables"
+platforms = ["linux"]
+raw = true
+streaming = false
 
 [parsers.iw-scan]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "iw-scan"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "iw-scan"
 
 [parsers.iwconfig]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "iwconfig"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "iwconfig"
 
 [parsers.jar-manifest]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "jar-manifest"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "jar-manifest"
 
 [parsers.jobs]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "jobs"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "jobs"
 
 [parsers.jwt]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "jwt"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "jwt"
 
 [parsers.kv]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "kv"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "kv"
 
 [parsers.kv-dup]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "kv-dup"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "kv-dup"
 
 [parsers.last]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "last"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "last"
 
 [parsers.ldd]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ldd"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ldd"
 
 [parsers.ls]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ls"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "ls"
-jc_streaming = "ls-s"
+streaming_name = "ls-s"
 
 [parsers.lsattr]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lsattr"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lsattr"
 
 [parsers.lsb-release]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lsb-release"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lsb-release"
 
 [parsers.lsblk]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lsblk"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lsblk"
 
 [parsers.lsmod]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lsmod"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lsmod"
 
 [parsers.lsof]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lsof"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lsof"
 
 [parsers.lspci]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lspci"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lspci"
 
 [parsers.lsusb]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "lsusb"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "lsusb"
 
 [parsers.m3u]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "m3u"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "m3u"
 
 [parsers.mdadm]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "mdadm"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "mdadm"
 
 [parsers.mount]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "mount"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "mount"
 
 [parsers.mpstat]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "mpstat"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "mpstat"
-jc_streaming = "mpstat-s"
+streaming_name = "mpstat-s"
 
 [parsers.needrestart]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "needrestart"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "needrestart"
-
-[parsers.netrc]
-status = "unported"
-platforms = ["linux", "macos"]
-raw = true
-streaming = false
-jc_standard = "netrc"
-
-[parsers.netstat]
-status = "in-progress"
-platforms = ["linux", "macos"]
-raw = true
-streaming = false
-jc_standard = "netstat"
 
 [parsers.net-localgroup]
+origin = "jc"
 status = "deferred-windows"
+target = "windows-deferred"
+standard_name = "net-localgroup"
 platforms = ["windows"]
 raw = true
 streaming = false
-jc_standard = "net-localgroup"
 
 [parsers.net-user]
+origin = "jc"
 status = "deferred-windows"
+target = "windows-deferred"
+standard_name = "net-user"
 platforms = ["windows"]
 raw = true
 streaming = false
-jc_standard = "net-user"
+
+[parsers.netrc]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "netrc"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
+
+[parsers.netstat]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "netstat"
+platforms = ["linux", "macos"]
+raw = true
+streaming = false
 
 [parsers.nmcli]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "nmcli"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "nmcli"
 
 [parsers.nsd-control]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "nsd-control"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "nsd-control"
 
 [parsers.ntpq]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ntpq"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ntpq"
 
 [parsers.openvpn]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "openvpn"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "openvpn"
 
 [parsers.os-prober]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "os-prober"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "os-prober"
 
 [parsers.os-release]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "os-release"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "os-release"
 
 [parsers.pacman]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pacman"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "pacman"
 
 [parsers.passwd]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "passwd"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "passwd"
 
 [parsers.path]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "path"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "path"
 
 [parsers.path-list]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "path-list"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "path-list"
 
 [parsers.pci-ids]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pci-ids"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "pci-ids"
 
 [parsers.pgpass]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pgpass"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "pgpass"
 
 [parsers.pidstat]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pidstat"
 platforms = ["linux"]
 raw = true
 streaming = true
-jc_standard = "pidstat"
-jc_streaming = "pidstat-s"
+streaming_name = "pidstat-s"
 
 [parsers.ping]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ping"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "ping"
-jc_streaming = "ping-s"
+streaming_name = "ping-s"
 
 [parsers.pip-list]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pip-list"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "pip-list"
 
 [parsers.pip-show]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pip-show"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "pip-show"
 
 [parsers.pkg-index-apk]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pkg-index-apk"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "pkg-index-apk"
 
 [parsers.pkg-index-deb]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "pkg-index-deb"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "pkg-index-deb"
 
 [parsers.plist]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "plist"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "plist"
 
 [parsers.postconf]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "postconf"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "postconf"
 
 [parsers.proc]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "proc"
+
+[parsers.proc-buddyinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-buddyinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-cmdline]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-cmdline"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-consoles]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-consoles"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-cpuinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-cpuinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-crypto]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-crypto"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-devices]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-devices"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-diskstats]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-diskstats"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-driver-rtc]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-driver-rtc"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-filesystems]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-filesystems"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-interrupts]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-interrupts"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-iomem]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-iomem"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-ioports]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-ioports"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-loadavg]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-loadavg"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-locks]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-locks"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-meminfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-meminfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-modules]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-modules"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-mtrr]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-mtrr"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-arp]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-arp"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-dev]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-dev"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-dev-mcast]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-dev-mcast"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-if-inet6]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-if-inet6"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-igmp]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-igmp"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-igmp6]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-igmp6"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-ipv6-route]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-ipv6-route"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-netlink]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-netlink"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-netstat]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-netstat"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-packet]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-packet"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-protocols]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-protocols"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-route]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-route"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-tcp]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-tcp"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-net-unix]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-net-unix"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pagetypeinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pagetypeinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-partitions]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-partitions"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-fdinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-fdinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-io]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-io"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-maps]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-maps"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-mountinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-mountinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-numa-maps]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-numa-maps"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-smaps]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-smaps"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-stat]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-stat"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-statm]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-statm"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-pid-status]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-pid-status"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-slabinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-slabinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-softirqs]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-softirqs"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-stat]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-stat"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-swaps]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-swaps"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-uptime]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-uptime"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-version]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-version"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-vmallocinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-vmallocinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-vmstat]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-vmstat"
+platforms = ["linux"]
+raw = true
+streaming = false
+
+[parsers.proc-zoneinfo]
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "proc-zoneinfo"
+platforms = ["linux"]
+raw = true
+streaming = false
 
 [parsers.ps]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ps"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ps"
 
 [parsers.resolve-conf]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "resolve-conf"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "resolve-conf"
 
 [parsers.route]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "route"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "route"
 
 [parsers.route-print]
+origin = "jc"
 status = "deferred-windows"
+target = "windows-deferred"
+standard_name = "route-print"
 platforms = ["windows"]
 raw = true
 streaming = false
-jc_standard = "route-print"
 
 [parsers.rpm-qi]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "rpm-qi"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "rpm-qi"
 
 [parsers.rsync]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "rsync"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "rsync"
-jc_streaming = "rsync-s"
+streaming_name = "rsync-s"
 
 [parsers.semver]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "semver"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "semver"
 
 [parsers.sfdisk]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "sfdisk"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "sfdisk"
 
 [parsers.shadow]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "shadow"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "shadow"
 
 [parsers.srt]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "srt"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "srt"
 
 [parsers.ss]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ss"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ss"
 
 [parsers.ssh-conf]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ssh-conf"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ssh-conf"
 
 [parsers.sshd-conf]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "sshd-conf"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "sshd-conf"
 
 [parsers.stat]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "stat"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "stat"
-jc_streaming = "stat-s"
+streaming_name = "stat-s"
 
 [parsers.swapon]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "swapon"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "swapon"
 
 [parsers.sysctl]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "sysctl"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "sysctl"
 
 [parsers.syslog]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "syslog"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "syslog"
-jc_streaming = "syslog-s"
+streaming_name = "syslog-s"
 
 [parsers.syslog-bsd]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "syslog-bsd"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "syslog-bsd"
-jc_streaming = "syslog-bsd-s"
+streaming_name = "syslog-bsd-s"
 
 [parsers.systemctl]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "systemctl"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "systemctl"
 
 [parsers.systemctl-lj]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "systemctl-lj"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "systemctl-lj"
 
 [parsers.systemctl-ls]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "systemctl-ls"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "systemctl-ls"
 
 [parsers.systemctl-luf]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "systemctl-luf"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "systemctl-luf"
 
 [parsers.systeminfo]
+origin = "jc"
 status = "deferred-windows"
+target = "windows-deferred"
+standard_name = "systeminfo"
 platforms = ["windows"]
 raw = true
 streaming = false
-jc_standard = "systeminfo"
 
 [parsers.time]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "time"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "time"
 
 [parsers.timedatectl]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "timedatectl"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "timedatectl"
 
 [parsers.timestamp]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "timestamp"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "timestamp"
 
 [parsers.toml]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "toml"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "toml"
 
 [parsers.top]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "top"
 platforms = ["linux"]
 raw = true
 streaming = true
-jc_standard = "top"
-jc_streaming = "top-s"
+streaming_name = "top-s"
 
 [parsers.tracepath]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "tracepath"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "tracepath"
 
 [parsers.traceroute]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "traceroute"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "traceroute"
-jc_streaming = "traceroute-s"
+streaming_name = "traceroute-s"
 
 [parsers.tsv]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "tsv"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "tsv"
-jc_streaming = "tsv-s"
+streaming_name = "tsv-s"
 
 [parsers.tsv-ih]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "tsv-ih"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "tsv-ih"
-jc_streaming = "tsv-ih-s"
+streaming_name = "tsv-ih-s"
 
 [parsers.tune2fs]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "tune2fs"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "tune2fs"
 
 [parsers.typeset]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "typeset"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "typeset"
 
 [parsers.udevadm]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "udevadm"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "udevadm"
 
 [parsers.ufw]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ufw"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ufw"
 
 [parsers.ufw-appinfo]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ufw-appinfo"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "ufw-appinfo"
 
 [parsers.uname]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "uname"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "uname"
 
 [parsers.update-alt-gs]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "update-alt-gs"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "update-alt-gs"
 
 [parsers.update-alt-q]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "update-alt-q"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "update-alt-q"
 
 [parsers.upower]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "upower"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "upower"
 
 [parsers.upsc]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "upsc"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "upsc"
 
 [parsers.uptime]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "uptime"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "uptime"
 
 [parsers.url]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "url"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "url"
 
 [parsers.ver]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "ver"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "ver"
 
 [parsers.veracrypt]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "veracrypt"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "veracrypt"
 
 [parsers.vmstat]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "vmstat"
 platforms = ["linux", "macos"]
 raw = true
 streaming = true
-jc_standard = "vmstat"
-jc_streaming = "vmstat-s"
+streaming_name = "vmstat-s"
 
 [parsers.w]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "w"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "w"
 
 [parsers.wc]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "wc"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "wc"
 
 [parsers.wg-show]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "wg-show"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "wg-show"
 
 [parsers.who]
-status = "in-progress"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "who"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "who"
 
 [parsers.x509-cert]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "x509-cert"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "x509-cert"
 
 [parsers.x509-crl]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "x509-crl"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "x509-crl"
 
 [parsers.x509-csr]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "x509-csr"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "x509-csr"
 
 [parsers.xml]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "xml"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "xml"
 
 [parsers.xrandr]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "xrandr"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "xrandr"
 
 [parsers.yaml]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "yaml"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "yaml"
 
 [parsers.zipinfo]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "zipinfo"
 platforms = ["linux", "macos"]
 raw = true
 streaming = false
-jc_standard = "zipinfo"
 
 [parsers.zpool-iostat]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "zpool-iostat"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "zpool-iostat"
 
 [parsers.zpool-status]
-status = "unported"
+origin = "jc"
+status = "implemented"
+target = "linux-macos-generic"
+standard_name = "zpool-status"
 platforms = ["linux"]
 raw = true
 streaming = false
-jc_standard = "zpool-status"
+

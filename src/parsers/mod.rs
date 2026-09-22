@@ -1,128 +1,41 @@
-pub mod apt_cache_show;
-pub mod arp;
-pub mod blkid;
-pub mod chage;
-pub mod cksum;
-pub(crate) mod common;
-pub mod crontab;
-pub mod curl_head;
-pub mod date;
-pub mod df;
-pub mod dig;
-pub mod dmidecode;
-pub mod dpkg_l;
-pub mod du;
-pub mod env;
-pub mod ethtool;
-pub mod file;
-pub mod find;
-pub mod findmnt;
-pub mod free;
-pub mod fstab;
-pub mod getfacl;
-pub mod git_diff;
-pub mod git_log;
-pub mod git_ls_remote;
-pub mod group;
-pub mod hashsum;
-pub mod history;
-pub mod host;
-pub mod hosts;
-pub mod id;
-pub mod ifconfig;
-pub mod ip_route;
-pub mod iptables;
-pub mod jobs;
-pub mod ldd;
-pub mod ls;
-pub mod lsattr;
-pub mod lsb_release;
-pub mod lsblk;
-pub mod lsmod;
-pub mod lsof;
-pub mod lspci;
-pub mod mount;
-pub mod netstat;
-pub mod os_release;
-pub mod pacman;
-pub mod passwd;
-pub mod ping;
-pub mod ps;
-pub mod route;
-pub mod shadow;
-pub mod ss;
-pub mod stat;
-pub mod swapon;
-pub mod systemctl;
-pub mod timedatectl;
-pub mod uname;
-pub mod uptime;
-pub mod w;
-pub mod wc;
-pub mod who;
+pub mod jc;
+pub mod native;
+pub(crate) mod shared;
+
+pub(crate) use jc::common;
+pub use jc::{
+    acpi, airport, amixer, apt_cache_show, apt_get_sqq, arp, asciitable, asciitable_m,
+    authorized_keys, blkid, bluetoothctl, cbt, cef, certbot, chage, cksum, clf, crontab, crontab_u,
+    csv, csv_ih, curl_head, date, datetime_iso, debconf_show, df, dig, dmidecode, dpkg_l, du,
+    efibootmgr, email_address, env, ethtool, file, find, findmnt, finger, free, fstab, getfacl,
+    git_diff, git_log, git_ls_remote, gpg, group, gshadow, hash, hashsum, hciconfig, history, host,
+    hosts, http_headers, id, ifconfig, iftop, ini, ini_dup, iostat, ip_address, ip_route, iptables,
+    iw_scan, iwconfig, jar_manifest, jobs, jwt, kv, kv_dup, last, ldd, ls, lsattr, lsb_release,
+    lsblk, lsmod, lsof, lspci, lsusb, m3u, mdadm, mount, mpstat, needrestart, netrc, netstat,
+    nmcli, nsd_control, ntpq, openvpn, os_prober, os_release, pacman, passwd, path, path_list,
+    pci_ids, pgpass, pidstat, ping, pip_list, pip_show, pkg_index_apk, pkg_index_deb, plist,
+    postconf, proc, proc_buddyinfo, proc_cmdline, proc_consoles, proc_cpuinfo, proc_crypto,
+    proc_devices, proc_diskstats, proc_driver_rtc, proc_filesystems, proc_interrupts, proc_iomem,
+    proc_ioports, proc_loadavg, proc_locks, proc_meminfo, proc_modules, proc_mtrr, proc_net_arp,
+    proc_net_dev, proc_net_dev_mcast, proc_net_if_inet6, proc_net_igmp, proc_net_igmp6,
+    proc_net_ipv6_route, proc_net_netlink, proc_net_netstat, proc_net_packet, proc_net_protocols,
+    proc_net_route, proc_net_tcp, proc_net_unix, proc_pagetypeinfo, proc_partitions,
+    proc_pid_fdinfo, proc_pid_io, proc_pid_maps, proc_pid_mountinfo, proc_pid_numa_maps,
+    proc_pid_smaps, proc_pid_stat, proc_pid_statm, proc_pid_status, proc_slabinfo, proc_softirqs,
+    proc_stat, proc_swaps, proc_uptime, proc_version, proc_vmallocinfo, proc_vmstat, proc_zoneinfo,
+    ps, resolve_conf, route, rpm_qi, rsync, semver, sfdisk, shadow, srt, ss, ssh_conf, sshd_conf,
+    stat, swapon, sysctl, syslog, syslog_bsd, systemctl, systemctl_lj, systemctl_ls, systemctl_luf,
+    time, timedatectl, timestamp, toml, top, tracepath, traceroute, tsv, tsv_ih, tune2fs, typeset,
+    udevadm, ufw, ufw_appinfo, uname, update_alt_gs, update_alt_q, upower, upsc, uptime, url, ver,
+    veracrypt, vmstat, w, wc, wg_show, who, x509_cert, x509_crl, x509_csr, xml, xrandr, yaml,
+    zipinfo, zpool_iostat, zpool_status,
+};
 
 use crate::ScocParser;
 
-pub(crate) static BUILTINS: [&'static dyn ScocParser; 61] = [
-    &apt_cache_show::APT_CACHE_SHOW,
-    &arp::ARP,
-    &blkid::BLKID,
-    &chage::CHAGE,
-    &cksum::CKSUM,
-    &crontab::CRONTAB,
-    &curl_head::CURL_HEAD,
-    &date::DATE,
-    &df::DF,
-    &dig::DIG,
-    &dmidecode::DMIDECODE,
-    &dpkg_l::DPKG_L,
-    &du::DU,
-    &env::ENV,
-    &ethtool::ETHTOOL,
-    &file::FILE,
-    &find::FIND,
-    &findmnt::FINDMNT,
-    &free::FREE,
-    &fstab::FSTAB,
-    &getfacl::GETFACL,
-    &git_diff::GIT_DIFF,
-    &git_log::GIT_LOG,
-    &git_ls_remote::GIT_LS_REMOTE,
-    &group::GROUP,
-    &hashsum::HASHSUM,
-    &history::HISTORY,
-    &host::HOST,
-    &hosts::HOSTS,
-    &id::ID,
-    &ifconfig::IFCONFIG,
-    &ip_route::IP_ROUTE,
-    &iptables::IPTABLES,
-    &jobs::JOBS,
-    &ldd::LDD,
-    &ls::LS,
-    &lsattr::LSATTR,
-    &lsb_release::LSB_RELEASE,
-    &lsblk::LSBLK,
-    &lsmod::LSMOD,
-    &lsof::LSOF,
-    &lspci::LSPCI,
-    &mount::MOUNT,
-    &netstat::NETSTAT,
-    &os_release::OS_RELEASE,
-    &pacman::PACMAN,
-    &passwd::PASSWD,
-    &ping::PING,
-    &ps::PS,
-    &route::ROUTE,
-    &shadow::SHADOW,
-    &ss::SS,
-    &stat::STAT,
-    &swapon::SWAPON,
-    &systemctl::SYSTEMCTL,
-    &timedatectl::TIMEDATECTL,
-    &uname::UNAME,
-    &uptime::UPTIME,
-    &w::W,
-    &wc::WC,
-    &who::WHO,
-];
+pub(crate) fn builtins() -> Vec<&'static dyn ScocParser> {
+    let mut out = Vec::with_capacity(274);
+    out.extend_from_slice(&jc::BUILTINS);
+    out.extend(native::builtins());
+    out
+}

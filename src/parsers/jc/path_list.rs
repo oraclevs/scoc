@@ -1,0 +1,41 @@
+use crate::parsers::shared::generic::{GenericKind, GenericParser};
+use crate::{
+    OptionSpec, OutputShape, ParserCapabilities, ParserDescriptor, ParserOutput, ParserTag,
+    Platform, UpstreamParser,
+};
+
+const OPTIONS: [OptionSpec; 1] = [OptionSpec::bool(
+    "raw",
+    false,
+    "Return raw-compatible output where supported",
+)];
+const PLATFORMS: [Platform; 2] = [Platform::Linux, Platform::MacOs];
+const TAGS: [ParserTag; 1] = [ParserTag::Command];
+
+pub static DESCRIPTOR: ParserDescriptor = ParserDescriptor {
+    name: "path-list",
+    aliases: &[],
+    description: "JC 1.26.0 target `path-list` parser",
+    parser_version: "0.2.0",
+    platforms: &PLATFORMS,
+    tags: &TAGS,
+    output: ParserOutput {
+        normalized: OutputShape::List,
+        raw: Some(OutputShape::List),
+        stream_item: None,
+    },
+    capabilities: ParserCapabilities {
+        raw: true,
+        streaming: false,
+        ignore_errors: false,
+    },
+    options: &OPTIONS,
+    upstream: Some(UpstreamParser {
+        standard_name: "path-list",
+        standard_version: "unknown-pinned",
+        streaming_name: None,
+        streaming_version: None,
+    }),
+};
+
+pub(crate) static PARSER: GenericParser = GenericParser::new(&DESCRIPTOR, GenericKind::Lines);

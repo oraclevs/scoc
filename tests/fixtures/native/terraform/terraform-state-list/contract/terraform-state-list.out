@@ -1,0 +1,2 @@
+module.web.aws_instance.app[0]
+aws_s3_bucket.assets

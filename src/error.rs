@@ -29,6 +29,12 @@ pub enum ScocError {
         message: String,
     },
 
+    #[error("unsupported output variant for parser `{parser}`: {variant}")]
+    UnsupportedVariant { parser: String, variant: String },
+
+    #[error("internal SCOC error: {message}")]
+    Internal { message: String },
+
     #[error("input for parser `{parser}` is not valid UTF-8")]
     Utf8 { parser: String },
 }
@@ -42,6 +48,19 @@ impl ScocError {
         Self::Parse {
             parser: parser.into(),
             line,
+            message: message.into(),
+        }
+    }
+
+    pub fn unsupported_variant(parser: impl Into<String>, variant: impl Into<String>) -> Self {
+        Self::UnsupportedVariant {
+            parser: parser.into(),
+            variant: variant.into(),
+        }
+    }
+
+    pub fn internal(message: impl Into<String>) -> Self {
+        Self::Internal {
             message: message.into(),
         }
     }

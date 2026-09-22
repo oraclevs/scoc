@@ -1,3 +1,5 @@
+mod catalog;
+mod catalog_generated;
 mod compatibility;
 mod descriptor;
 mod error;
@@ -7,6 +9,7 @@ pub mod parsers;
 mod registry;
 pub mod utils;
 
+pub use catalog::{catalog, catalog_entry, ParserCatalogEntry, ParserOrigin, VerificationState};
 pub use compatibility::{CompatibilityBaseline, JC_BASELINE};
 pub use descriptor::{
     OutputShape, ParserCapabilities, ParserDescriptor, ParserOutput, ParserTag, Platform,

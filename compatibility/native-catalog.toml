@@ -1,0 +1,288 @@
+[catalog]
+count = 57
+
+[parsers.docker-ps]
+ecosystem = "docker"
+variants = ["default", "--all", "--no-trunc", "docker container ls"]
+status = "implemented"
+
+[parsers.docker-images]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-stats]
+ecosystem = "docker"
+variants = ["--no-stream"]
+status = "implemented"
+
+[parsers.docker-network-ls]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-volume-ls]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-system-df]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-info]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-context-ls]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-compose-ps]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-compose-ls]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.docker-compose-images]
+ecosystem = "docker"
+variants = ["default"]
+status = "implemented"
+
+[parsers.kubectl-get]
+ecosystem = "kubernetes"
+variants = ["default", "-A", "-o wide"]
+status = "implemented"
+
+[parsers.kubectl-top]
+ecosystem = "kubernetes"
+variants = ["default"]
+status = "implemented"
+
+[parsers.kubectl-events]
+ecosystem = "kubernetes"
+variants = ["default"]
+status = "implemented"
+
+[parsers.kubectl-contexts]
+ecosystem = "kubernetes"
+variants = ["default"]
+status = "implemented"
+
+[parsers.kubectl-api-resources]
+ecosystem = "kubernetes"
+variants = ["default"]
+status = "implemented"
+
+[parsers.helm-list]
+ecosystem = "helm"
+variants = ["default"]
+status = "implemented"
+
+[parsers.helm-history]
+ecosystem = "helm"
+variants = ["default"]
+status = "implemented"
+
+[parsers.helm-status]
+ecosystem = "helm"
+variants = ["default"]
+status = "implemented"
+
+[parsers.git-status]
+ecosystem = "git"
+variants = ["default", "--short", "--porcelain"]
+status = "implemented"
+
+[parsers.git-branch]
+ecosystem = "git"
+variants = ["default", "-a", "-vv"]
+status = "implemented"
+
+[parsers.git-remote]
+ecosystem = "git"
+variants = ["default"]
+status = "implemented"
+
+[parsers.git-tag]
+ecosystem = "git"
+variants = ["default"]
+status = "implemented"
+
+[parsers.git-stash]
+ecosystem = "git"
+variants = ["default"]
+status = "implemented"
+
+[parsers.git-worktree]
+ecosystem = "git"
+variants = ["default"]
+status = "implemented"
+
+[parsers.git-submodule]
+ecosystem = "git"
+variants = ["default"]
+status = "implemented"
+
+[parsers.gh-pr-list]
+ecosystem = "github"
+variants = ["default"]
+status = "implemented"
+
+[parsers.gh-issue-list]
+ecosystem = "github"
+variants = ["default"]
+status = "implemented"
+
+[parsers.gh-run-list]
+ecosystem = "github"
+variants = ["default"]
+status = "implemented"
+
+[parsers.cargo-tree]
+ecosystem = "rust"
+variants = ["default"]
+status = "implemented"
+
+[parsers.cargo-install-list]
+ecosystem = "rust"
+variants = ["default"]
+status = "implemented"
+
+[parsers.rustup-toolchains]
+ecosystem = "rust"
+variants = ["default"]
+status = "implemented"
+
+[parsers.rustup-targets]
+ecosystem = "rust"
+variants = ["default"]
+status = "implemented"
+
+[parsers.rustc-version]
+ecosystem = "rust"
+variants = ["default", "--verbose"]
+status = "implemented"
+
+[parsers.pip-freeze]
+ecosystem = "python"
+variants = ["default"]
+status = "implemented"
+
+[parsers.pip-check]
+ecosystem = "python"
+variants = ["default"]
+status = "implemented"
+
+[parsers.npm-run]
+ecosystem = "javascript"
+variants = ["default"]
+status = "implemented"
+
+[parsers.npm-ls]
+ecosystem = "javascript"
+variants = ["default"]
+status = "implemented"
+
+[parsers.npm-outdated]
+ecosystem = "javascript"
+variants = ["default"]
+status = "implemented"
+
+[parsers.pnpm-list]
+ecosystem = "javascript"
+variants = ["default"]
+status = "implemented"
+
+[parsers.pnpm-outdated]
+ecosystem = "javascript"
+variants = ["default"]
+status = "implemented"
+
+[parsers.yarn-list]
+ecosystem = "javascript"
+variants = ["default"]
+status = "implemented"
+
+[parsers.java-version]
+ecosystem = "java"
+variants = ["default"]
+status = "implemented"
+
+[parsers.gradle-tasks]
+ecosystem = "java"
+variants = ["default"]
+status = "implemented"
+
+[parsers.gradle-dependencies]
+ecosystem = "java"
+variants = ["default"]
+status = "implemented"
+
+[parsers.maven-dependency-tree]
+ecosystem = "java"
+variants = ["default"]
+status = "implemented"
+
+[parsers.go-version]
+ecosystem = "go"
+variants = ["default"]
+status = "implemented"
+
+[parsers.go-env]
+ecosystem = "go"
+variants = ["default"]
+status = "implemented"
+
+[parsers.go-mod-graph]
+ecosystem = "go"
+variants = ["default"]
+status = "implemented"
+
+[parsers.flutter-doctor]
+ecosystem = "flutter"
+variants = ["default"]
+status = "implemented"
+
+[parsers.flutter-devices]
+ecosystem = "flutter"
+variants = ["default"]
+status = "implemented"
+
+[parsers.flutter-emulators]
+ecosystem = "flutter"
+variants = ["default"]
+status = "implemented"
+
+[parsers.dart-pub-deps]
+ecosystem = "dart"
+variants = ["default"]
+status = "implemented"
+
+[parsers.dart-pub-outdated]
+ecosystem = "dart"
+variants = ["default"]
+status = "implemented"
+
+[parsers.terraform-state-list]
+ecosystem = "terraform"
+variants = ["default"]
+status = "implemented"
+
+[parsers.terraform-providers]
+ecosystem = "terraform"
+variants = ["default"]
+status = "implemented"
+
+[parsers.terraform-workspace-list]
+ecosystem = "terraform"
+variants = ["default"]
+status = "implemented"
+

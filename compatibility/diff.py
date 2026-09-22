@@ -1,25 +1,48 @@
 #!/usr/bin/env python3
+"""Differential runner against the pinned JC 1.26.0 oracle.
+
+Fixture discovery is manifest-driven so parser names containing dashes and streaming
+aliases are never inferred from directory layout.
+"""
 import argparse
 import json
+import shutil
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 ORACLE = ROOT / "compatibility" / "jc_oracle.py"
+CASES = ROOT / "tests" / "fixtures" / "jc-1.26.0" / "cases.json"
 
 
 def run_json(cmd, *, stdin=None):
     proc = subprocess.run(cmd, input=stdin, text=True, capture_output=True, cwd=ROOT)
     if proc.returncode:
-        sys.stderr.write(proc.stderr)
+        if proc.stdout:
+            sys.stderr.write(proc.stdout)
+        if proc.stderr:
+            sys.stderr.write(proc.stderr)
         raise SystemExit(proc.returncode)
     return json.loads(proc.stdout)
 
 
-def compare(parser, fixture, raw, streaming, ignore_errors):
+def load_cases():
+    data = json.loads(CASES.read_text(encoding="utf-8"))
+    if not isinstance(data, list):
+        raise SystemExit(f"invalid fixture manifest: {CASES}")
+    return data
+
+
+def compare(case):
+    parser = case["parser"]
+    fixture = ROOT / case["input"]
+    raw = bool(case.get("raw", False))
+    streaming = bool(case.get("streaming", False))
+    ignore_errors = bool(case.get("ignore_errors", False))
     request = json.dumps({
         "parser": parser,
+        "streaming_parser": case.get("streaming_parser"),
         "input_path": str(fixture),
         "raw": raw,
         "streaming": streaming,
@@ -38,47 +61,64 @@ def compare(parser, fixture, raw, streaming, ignore_errors):
         cmd.append("--ignore-errors")
     actual = run_json(cmd)
     if expected != actual:
-        print(json.dumps({"fixture": str(fixture), "expected": expected, "actual": actual}, indent=2), file=sys.stderr)
+        print(json.dumps({"parser": parser, "fixture": str(fixture), "expected": expected, "actual": actual}, indent=2), file=sys.stderr)
         return False
-    print(f"PASS {parser}: {fixture}")
+    mode = "stream" if streaming else "batch"
+    print(f"PASS {parser} [{mode}{'/raw' if raw else ''}]: {fixture.relative_to(ROOT)}")
     return True
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--parser", help="parser name; omit with --all-fixtures to infer from fixture directories")
-    ap.add_argument("--fixture", type=Path)
+    ap.add_argument("--parser", help="canonical parser name; runs all manifest cases for that parser")
+    ap.add_argument("--fixture", type=Path, help="one explicit fixture (requires --parser)")
     ap.add_argument("--all-fixtures", action="store_true")
-    ap.add_argument("--raw", action="store_true")
-    ap.add_argument("--streaming", action="store_true")
-    ap.add_argument("--ignore-errors", action="store_true")
+    ap.add_argument("--raw", action="store_true", help="override explicit fixture case to raw mode")
+    ap.add_argument("--streaming", action="store_true", help="override explicit fixture case to streaming mode")
+    ap.add_argument("--ignore-errors", action="store_true", help="override explicit fixture case ignore-errors mode")
     args = ap.parse_args()
+
+    if shutil.which("cargo") is None:
+        print("cargo is required for SCOC differential execution", file=sys.stderr)
+        return 2
+
+    try:
+        import jc  # noqa: F401
+        import jc.lib
+        if getattr(jc.lib, "__version__", None) != "1.26.0":
+            print(f"jc 1.26.0 is required; found {getattr(jc.lib, '__version__', None)!r}", file=sys.stderr)
+            return 2
+    except ImportError:
+        print("jc 1.26.0 is required for differential execution", file=sys.stderr)
+        return 2
 
     if args.fixture:
         if not args.parser:
             ap.error("--fixture requires --parser")
-        cases = [(args.parser, args.fixture)]
-    elif args.all_fixtures:
-        fixtures = sorted((ROOT / "tests" / "fixtures" / "jc-1.26.0").rglob("*.out"))
-        if args.parser:
-            fixtures = [
-                path for path in fixtures
-                if path.parent.name == args.parser or args.parser in path.name
-            ]
-            cases = [(args.parser, path) for path in fixtures]
-        else:
-            cases = [(path.parent.name, path) for path in fixtures]
+        path = args.fixture if args.fixture.is_absolute() else (ROOT / args.fixture)
+        case = {
+            "parser": args.parser,
+            "input": str(path.relative_to(ROOT)),
+            "raw": args.raw,
+            "streaming": args.streaming,
+            "ignore_errors": args.ignore_errors,
+        }
+        cases = [case]
     else:
-        ap.error("provide --fixture or --all-fixtures")
+        if not args.all_fixtures and not args.parser:
+            ap.error("provide --parser, --fixture, or --all-fixtures")
+        cases = load_cases()
+        if args.parser:
+            cases = [case for case in cases if case["parser"] == args.parser]
 
     if not cases:
         label = args.parser or "the vendored parser set"
-        print(f"no fixtures found for {label}", file=sys.stderr)
+        print(f"no differential fixtures found for {label}", file=sys.stderr)
         return 2
-    ok = all(
-        compare(parser, fixture, args.raw, args.streaming, args.ignore_errors)
-        for parser, fixture in cases
-    )
+
+    ok = True
+    for case in cases:
+        ok = compare(case) and ok
     return 0 if ok else 1
 
 

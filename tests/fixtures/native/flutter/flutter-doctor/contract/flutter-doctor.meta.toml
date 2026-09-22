@@ -1,0 +1,6 @@
+parser = "flutter-doctor"
+ecosystem = "flutter"
+tool_version = "synthetic-contract"
+source_kind = "synthetic-regression"
+source = "SCOC parser contract authored for deterministic offline regression testing"
+verification = "not-a-live-capture"

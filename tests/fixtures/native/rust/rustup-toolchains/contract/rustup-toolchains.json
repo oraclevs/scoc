@@ -1,0 +1,12 @@
+[
+  {
+    "name": "stable-x86_64-unknown-linux-gnu",
+    "default": true,
+    "installed": true
+  },
+  {
+    "name": "nightly-x86_64-unknown-linux-gnu",
+    "default": false,
+    "installed": true
+  }
+]

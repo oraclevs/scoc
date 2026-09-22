@@ -1,0 +1,92 @@
+# Aggregated provenance for the checked-in JC 1.26.0 differential corpus.
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/generic/env/basic.out"
+parser = "env"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "SCOC deterministic fixture derived from JC 1.26.0 env schema/examples"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/df/basic.out"
+parser = "df"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "SCOC deterministic fixture with real df column alignment (not captured from a live host)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/fstab/basic.out"
+parser = "fstab"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "SCOC deterministic fixture derived from JC 1.26.0 fstab schema/examples"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/ls/long.out"
+parser = "ls"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "SCOC deterministic fixture derived from JC 1.26.0 ls schema/examples"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/lsblk/tree.out"
+parser = "lsblk"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (lsblk)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/lspci/mmv.out"
+parser = "lspci"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (lspci -mmv)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/pacman/two_records.out"
+parser = "pacman"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (pacman -Qi bash coreutils, build/install dates removed)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/ping/basic.out"
+parser = "ping"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "SCOC deterministic fixture derived from JC 1.26.0 ping schema/examples"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/ps/axu.out"
+parser = "ps"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "SCOC deterministic fixture derived from JC 1.26.0 ps schema/examples"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/ss/listening.out"
+parser = "ss"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (ss -a and ss -tulpn merged by hand for coverage)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/systemctl/units.out"
+parser = "systemctl"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (systemctl -a --no-pager)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/timedatectl/status.out"
+parser = "timedatectl"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (timedatectl)"
+
+[[fixtures]]
+path = "tests/fixtures/jc-1.26.0/linux/uname/host.out"
+parser = "uname"
+upstream = "kellyjonbrazil/jc"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+provenance = "Trimmed real output from an Arch Linux host; SCOC output verified equal to JC 1.26.0 (uname -a)"

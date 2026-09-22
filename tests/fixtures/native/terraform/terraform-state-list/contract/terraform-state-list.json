@@ -1,0 +1,8 @@
+[
+  {
+    "address": "module.web.aws_instance.app[0]"
+  },
+  {
+    "address": "aws_s3_bucket.assets"
+  }
+]

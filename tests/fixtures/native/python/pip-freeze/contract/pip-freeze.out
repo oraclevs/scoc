@@ -1,0 +1,2 @@
+requests==2.32.5
+my-lib @ git+https://example.invalid/my-lib.git@abc123

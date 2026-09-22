@@ -1,0 +1,2071 @@
+[baseline]
+version = "1.26.0"
+commit = "73fa7d5572dd730076723bd6280786bb9101d32f"
+
+[parsers.acpi]
+name = "acpi"
+module = "acpi.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.airport]
+name = "airport"
+module = "airport.py"
+version = "unknown-pinned"
+compatible = ["darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "airport-s"
+streaming_module = "airport_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.amixer]
+name = "amixer"
+module = "amixer.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.apt-cache-show]
+name = "apt-cache-show"
+module = "apt_cache_show.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.apt-get-sqq]
+name = "apt-get-sqq"
+module = "apt_get_sqq.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.arp]
+name = "arp"
+module = "arp.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.asciitable]
+name = "asciitable"
+module = "asciitable.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.asciitable-m]
+name = "asciitable-m"
+module = "asciitable_m.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.authorized-keys]
+name = "authorized-keys"
+module = "authorized_keys.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.blkid]
+name = "blkid"
+module = "blkid.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.bluetoothctl]
+name = "bluetoothctl"
+module = "bluetoothctl.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.cbt]
+name = "cbt"
+module = "cbt.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.cef]
+name = "cef"
+module = "cef.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "cef-s"
+streaming_module = "cef_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.certbot]
+name = "certbot"
+module = "certbot.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.chage]
+name = "chage"
+module = "chage.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.cksum]
+name = "cksum"
+module = "cksum.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.clf]
+name = "clf"
+module = "clf.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "clf-s"
+streaming_module = "clf_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.crontab]
+name = "crontab"
+module = "crontab.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.crontab-u]
+name = "crontab-u"
+module = "crontab_u.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.csv]
+name = "csv"
+module = "csv.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "csv-s"
+streaming_module = "csv_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.csv-ih]
+name = "csv-ih"
+module = "csv_ih.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "csv-ih-s"
+streaming_module = "csv_ih_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.curl-head]
+name = "curl-head"
+module = "curl_head.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.date]
+name = "date"
+module = "date.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.datetime-iso]
+name = "datetime-iso"
+module = "datetime_iso.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.debconf-show]
+name = "debconf-show"
+module = "debconf_show.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.df]
+name = "df"
+module = "df.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.dig]
+name = "dig"
+module = "dig.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.dir]
+name = "dir"
+module = "dir.py"
+version = "unknown-pinned"
+compatible = ["win32"]
+target = "windows-deferred"
+hidden = false
+deprecated = false
+
+[parsers.dmidecode]
+name = "dmidecode"
+module = "dmidecode.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.dpkg-l]
+name = "dpkg-l"
+module = "dpkg_l.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.du]
+name = "du"
+module = "du.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.efibootmgr]
+name = "efibootmgr"
+module = "efibootmgr.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.email-address]
+name = "email-address"
+module = "email_address.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.env]
+name = "env"
+module = "env.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ethtool]
+name = "ethtool"
+module = "ethtool.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.file]
+name = "file"
+module = "file.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.find]
+name = "find"
+module = "find.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.findmnt]
+name = "findmnt"
+module = "findmnt.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.finger]
+name = "finger"
+module = "finger.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.free]
+name = "free"
+module = "free.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.fstab]
+name = "fstab"
+module = "fstab.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.getfacl]
+name = "getfacl"
+module = "getfacl.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.git-diff]
+name = "git-diff"
+module = "git_diff.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.git-log]
+name = "git-log"
+module = "git_log.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "git-log-s"
+streaming_module = "git_log_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.git-ls-remote]
+name = "git-ls-remote"
+module = "git_ls_remote.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.gpg]
+name = "gpg"
+module = "gpg.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.group]
+name = "group"
+module = "group.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.gshadow]
+name = "gshadow"
+module = "gshadow.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.hash]
+name = "hash"
+module = "hash.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.hashsum]
+name = "hashsum"
+module = "hashsum.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.hciconfig]
+name = "hciconfig"
+module = "hciconfig.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.history]
+name = "history"
+module = "history.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.host]
+name = "host"
+module = "host.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.hosts]
+name = "hosts"
+module = "hosts.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.http-headers]
+name = "http-headers"
+module = "http_headers.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.id]
+name = "id"
+module = "id.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ifconfig]
+name = "ifconfig"
+module = "ifconfig.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.iftop]
+name = "iftop"
+module = "iftop.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ini]
+name = "ini"
+module = "ini.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ini-dup]
+name = "ini-dup"
+module = "ini_dup.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.iostat]
+name = "iostat"
+module = "iostat.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "iostat-s"
+streaming_module = "iostat_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.ip-address]
+name = "ip-address"
+module = "ip_address.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ip-route]
+name = "ip-route"
+module = "ip_route.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ipconfig]
+name = "ipconfig"
+module = "ipconfig.py"
+version = "unknown-pinned"
+compatible = ["win32"]
+target = "windows-deferred"
+hidden = false
+deprecated = false
+
+[parsers.iptables]
+name = "iptables"
+module = "iptables.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.iw-scan]
+name = "iw-scan"
+module = "iw_scan.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.iwconfig]
+name = "iwconfig"
+module = "iwconfig.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.jar-manifest]
+name = "jar-manifest"
+module = "jar_manifest.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.jobs]
+name = "jobs"
+module = "jobs.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.jwt]
+name = "jwt"
+module = "jwt.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.kv]
+name = "kv"
+module = "kv.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.kv-dup]
+name = "kv-dup"
+module = "kv_dup.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.last]
+name = "last"
+module = "last.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ldd]
+name = "ldd"
+module = "ldd.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ls]
+name = "ls"
+module = "ls.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "ls-s"
+streaming_module = "ls_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.lsattr]
+name = "lsattr"
+module = "lsattr.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.lsb-release]
+name = "lsb-release"
+module = "lsb_release.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.lsblk]
+name = "lsblk"
+module = "lsblk.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.lsmod]
+name = "lsmod"
+module = "lsmod.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.lsof]
+name = "lsof"
+module = "lsof.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.lspci]
+name = "lspci"
+module = "lspci.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.lsusb]
+name = "lsusb"
+module = "lsusb.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.m3u]
+name = "m3u"
+module = "m3u.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.mdadm]
+name = "mdadm"
+module = "mdadm.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.mount]
+name = "mount"
+module = "mount.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.mpstat]
+name = "mpstat"
+module = "mpstat.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "mpstat-s"
+streaming_module = "mpstat_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.needrestart]
+name = "needrestart"
+module = "needrestart.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.net-localgroup]
+name = "net-localgroup"
+module = "net_localgroup.py"
+version = "unknown-pinned"
+compatible = ["win32"]
+target = "windows-deferred"
+hidden = false
+deprecated = false
+
+[parsers.net-user]
+name = "net-user"
+module = "net_user.py"
+version = "unknown-pinned"
+compatible = ["win32"]
+target = "windows-deferred"
+hidden = false
+deprecated = false
+
+[parsers.netrc]
+name = "netrc"
+module = "netrc.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.netstat]
+name = "netstat"
+module = "netstat.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.nmcli]
+name = "nmcli"
+module = "nmcli.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.nsd-control]
+name = "nsd-control"
+module = "nsd_control.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ntpq]
+name = "ntpq"
+module = "ntpq.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.openvpn]
+name = "openvpn"
+module = "openvpn.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.os-prober]
+name = "os-prober"
+module = "os_prober.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.os-release]
+name = "os-release"
+module = "os_release.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pacman]
+name = "pacman"
+module = "pacman.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.passwd]
+name = "passwd"
+module = "passwd.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.path]
+name = "path"
+module = "path.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.path-list]
+name = "path-list"
+module = "path_list.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pci-ids]
+name = "pci-ids"
+module = "pci_ids.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pgpass]
+name = "pgpass"
+module = "pgpass.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pidstat]
+name = "pidstat"
+module = "pidstat.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "pidstat-s"
+streaming_module = "pidstat_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.ping]
+name = "ping"
+module = "ping.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "ping-s"
+streaming_module = "ping_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.pip-list]
+name = "pip-list"
+module = "pip_list.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pip-show]
+name = "pip-show"
+module = "pip_show.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pkg-index-apk]
+name = "pkg-index-apk"
+module = "pkg_index_apk.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.pkg-index-deb]
+name = "pkg-index-deb"
+module = "pkg_index_deb.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.plist]
+name = "plist"
+module = "plist.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.postconf]
+name = "postconf"
+module = "postconf.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc]
+name = "proc"
+module = "proc.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-buddyinfo]
+name = "proc-buddyinfo"
+module = "proc_buddyinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-cmdline]
+name = "proc-cmdline"
+module = "proc_cmdline.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-consoles]
+name = "proc-consoles"
+module = "proc_consoles.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-cpuinfo]
+name = "proc-cpuinfo"
+module = "proc_cpuinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-crypto]
+name = "proc-crypto"
+module = "proc_crypto.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-devices]
+name = "proc-devices"
+module = "proc_devices.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-diskstats]
+name = "proc-diskstats"
+module = "proc_diskstats.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-driver-rtc]
+name = "proc-driver-rtc"
+module = "proc_driver_rtc.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-filesystems]
+name = "proc-filesystems"
+module = "proc_filesystems.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-interrupts]
+name = "proc-interrupts"
+module = "proc_interrupts.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-iomem]
+name = "proc-iomem"
+module = "proc_iomem.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-ioports]
+name = "proc-ioports"
+module = "proc_ioports.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-loadavg]
+name = "proc-loadavg"
+module = "proc_loadavg.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-locks]
+name = "proc-locks"
+module = "proc_locks.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-meminfo]
+name = "proc-meminfo"
+module = "proc_meminfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-modules]
+name = "proc-modules"
+module = "proc_modules.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-mtrr]
+name = "proc-mtrr"
+module = "proc_mtrr.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-arp]
+name = "proc-net-arp"
+module = "proc_net_arp.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-dev]
+name = "proc-net-dev"
+module = "proc_net_dev.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-dev-mcast]
+name = "proc-net-dev-mcast"
+module = "proc_net_dev_mcast.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-if-inet6]
+name = "proc-net-if-inet6"
+module = "proc_net_if_inet6.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-igmp]
+name = "proc-net-igmp"
+module = "proc_net_igmp.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-igmp6]
+name = "proc-net-igmp6"
+module = "proc_net_igmp6.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-ipv6-route]
+name = "proc-net-ipv6-route"
+module = "proc_net_ipv6_route.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-netlink]
+name = "proc-net-netlink"
+module = "proc_net_netlink.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-netstat]
+name = "proc-net-netstat"
+module = "proc_net_netstat.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-packet]
+name = "proc-net-packet"
+module = "proc_net_packet.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-protocols]
+name = "proc-net-protocols"
+module = "proc_net_protocols.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-route]
+name = "proc-net-route"
+module = "proc_net_route.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-tcp]
+name = "proc-net-tcp"
+module = "proc_net_tcp.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-net-unix]
+name = "proc-net-unix"
+module = "proc_net_unix.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pagetypeinfo]
+name = "proc-pagetypeinfo"
+module = "proc_pagetypeinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-partitions]
+name = "proc-partitions"
+module = "proc_partitions.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-fdinfo]
+name = "proc-pid-fdinfo"
+module = "proc_pid_fdinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-io]
+name = "proc-pid-io"
+module = "proc_pid_io.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-maps]
+name = "proc-pid-maps"
+module = "proc_pid_maps.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-mountinfo]
+name = "proc-pid-mountinfo"
+module = "proc_pid_mountinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-numa-maps]
+name = "proc-pid-numa-maps"
+module = "proc_pid_numa_maps.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-smaps]
+name = "proc-pid-smaps"
+module = "proc_pid_smaps.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-stat]
+name = "proc-pid-stat"
+module = "proc_pid_stat.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-statm]
+name = "proc-pid-statm"
+module = "proc_pid_statm.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-pid-status]
+name = "proc-pid-status"
+module = "proc_pid_status.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-slabinfo]
+name = "proc-slabinfo"
+module = "proc_slabinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-softirqs]
+name = "proc-softirqs"
+module = "proc_softirqs.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-stat]
+name = "proc-stat"
+module = "proc_stat.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-swaps]
+name = "proc-swaps"
+module = "proc_swaps.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-uptime]
+name = "proc-uptime"
+module = "proc_uptime.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-version]
+name = "proc-version"
+module = "proc_version.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-vmallocinfo]
+name = "proc-vmallocinfo"
+module = "proc_vmallocinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-vmstat]
+name = "proc-vmstat"
+module = "proc_vmstat.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.proc-zoneinfo]
+name = "proc-zoneinfo"
+module = "proc_zoneinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ps]
+name = "ps"
+module = "ps.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.resolve-conf]
+name = "resolve-conf"
+module = "resolve_conf.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.route]
+name = "route"
+module = "route.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.route-print]
+name = "route-print"
+module = "route_print.py"
+version = "unknown-pinned"
+compatible = ["win32"]
+target = "windows-deferred"
+hidden = false
+deprecated = false
+
+[parsers.rpm-qi]
+name = "rpm-qi"
+module = "rpm_qi.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.rsync]
+name = "rsync"
+module = "rsync.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "rsync-s"
+streaming_module = "rsync_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.semver]
+name = "semver"
+module = "semver.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.sfdisk]
+name = "sfdisk"
+module = "sfdisk.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.shadow]
+name = "shadow"
+module = "shadow.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.srt]
+name = "srt"
+module = "srt.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ss]
+name = "ss"
+module = "ss.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ssh-conf]
+name = "ssh-conf"
+module = "ssh_conf.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.sshd-conf]
+name = "sshd-conf"
+module = "sshd_conf.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.stat]
+name = "stat"
+module = "stat.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "stat-s"
+streaming_module = "stat_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.swapon]
+name = "swapon"
+module = "swapon.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.sysctl]
+name = "sysctl"
+module = "sysctl.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.syslog]
+name = "syslog"
+module = "syslog.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "syslog-s"
+streaming_module = "syslog_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.syslog-bsd]
+name = "syslog-bsd"
+module = "syslog_bsd.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "syslog-bsd-s"
+streaming_module = "syslog_bsd_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.systemctl]
+name = "systemctl"
+module = "systemctl.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.systemctl-lj]
+name = "systemctl-lj"
+module = "systemctl_lj.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.systemctl-ls]
+name = "systemctl-ls"
+module = "systemctl_ls.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.systemctl-luf]
+name = "systemctl-luf"
+module = "systemctl_luf.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.systeminfo]
+name = "systeminfo"
+module = "systeminfo.py"
+version = "unknown-pinned"
+compatible = ["win32"]
+target = "windows-deferred"
+hidden = false
+deprecated = false
+
+[parsers.time]
+name = "time"
+module = "time.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.timedatectl]
+name = "timedatectl"
+module = "timedatectl.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.timestamp]
+name = "timestamp"
+module = "timestamp.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.toml]
+name = "toml"
+module = "toml.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.top]
+name = "top"
+module = "top.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "top-s"
+streaming_module = "top_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.tracepath]
+name = "tracepath"
+module = "tracepath.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.traceroute]
+name = "traceroute"
+module = "traceroute.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "traceroute-s"
+streaming_module = "traceroute_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.tsv]
+name = "tsv"
+module = "tsv.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "tsv-s"
+streaming_module = "tsv_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.tsv-ih]
+name = "tsv-ih"
+module = "tsv_ih.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "tsv-ih-s"
+streaming_module = "tsv_ih_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.tune2fs]
+name = "tune2fs"
+module = "tune2fs.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.typeset]
+name = "typeset"
+module = "typeset.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.udevadm]
+name = "udevadm"
+module = "udevadm.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ufw]
+name = "ufw"
+module = "ufw.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ufw-appinfo]
+name = "ufw-appinfo"
+module = "ufw_appinfo.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.uname]
+name = "uname"
+module = "uname.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.update-alt-gs]
+name = "update-alt-gs"
+module = "update_alt_gs.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.update-alt-q]
+name = "update-alt-q"
+module = "update_alt_q.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.upower]
+name = "upower"
+module = "upower.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.upsc]
+name = "upsc"
+module = "upsc.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.uptime]
+name = "uptime"
+module = "uptime.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.url]
+name = "url"
+module = "url.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.ver]
+name = "ver"
+module = "ver.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.veracrypt]
+name = "veracrypt"
+module = "veracrypt.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.vmstat]
+name = "vmstat"
+module = "vmstat.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+streaming_name = "vmstat-s"
+streaming_module = "vmstat_s.py"
+streaming_version = "unknown-pinned"
+
+[parsers.w]
+name = "w"
+module = "w.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.wc]
+name = "wc"
+module = "wc.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.wg-show]
+name = "wg-show"
+module = "wg_show.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.who]
+name = "who"
+module = "who.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.x509-cert]
+name = "x509-cert"
+module = "x509_cert.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.x509-crl]
+name = "x509-crl"
+module = "x509_crl.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.x509-csr]
+name = "x509-csr"
+module = "x509_csr.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.xml]
+name = "xml"
+module = "xml.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.xrandr]
+name = "xrandr"
+module = "xrandr.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.yaml]
+name = "yaml"
+module = "yaml.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.zipinfo]
+name = "zipinfo"
+module = "zipinfo.py"
+version = "unknown-pinned"
+compatible = ["linux", "darwin"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.zpool-iostat]
+name = "zpool-iostat"
+module = "zpool_iostat.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+
+[parsers.zpool-status]
+name = "zpool-status"
+module = "zpool_status.py"
+version = "unknown-pinned"
+compatible = ["linux"]
+target = "linux-macos-generic"
+hidden = false
+deprecated = false
+

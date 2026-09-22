@@ -1,0 +1,14 @@
+[
+  {
+    "name": "default",
+    "current": false
+  },
+  {
+    "name": "production",
+    "current": true
+  },
+  {
+    "name": "staging",
+    "current": false
+  }
+]

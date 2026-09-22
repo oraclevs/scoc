@@ -3,7 +3,7 @@ use std::sync::OnceLock;
 
 use serde_json::Value;
 
-use crate::parsers::BUILTINS;
+use crate::parsers::builtins;
 use crate::{ParseOptions, ParserDescriptor, ScocError, ScocParser, ScocStreamParser};
 
 pub struct ParserRegistry {
@@ -12,17 +12,42 @@ pub struct ParserRegistry {
 }
 
 impl ParserRegistry {
-    fn builtin() -> Self {
-        let parsers = BUILTINS.to_vec();
+    fn from_parsers(parsers: Vec<&'static dyn ScocParser>) -> Result<Self, ScocError> {
         let mut lookup = HashMap::new();
+        let mut canonical = HashMap::new();
         for parser in &parsers {
             let descriptor = parser.descriptor();
-            lookup.insert(descriptor.name.to_string(), *parser);
+            let canonical_key = normalize_name(descriptor.name);
+            if canonical
+                .insert(canonical_key.clone(), descriptor.name)
+                .is_some()
+            {
+                return Err(ScocError::internal(format!(
+                    "duplicate canonical parser `{}`",
+                    descriptor.name
+                )));
+            }
+            if lookup.insert(canonical_key, *parser).is_some() {
+                return Err(ScocError::internal(format!(
+                    "registry collision at `{}`",
+                    descriptor.name
+                )));
+            }
             for alias in descriptor.aliases {
-                lookup.insert(alias.to_ascii_lowercase(), *parser);
+                let key = normalize_name(alias);
+                if canonical.contains_key(&key) || lookup.contains_key(&key) {
+                    return Err(ScocError::internal(format!(
+                        "parser alias collision at `{alias}`"
+                    )));
+                }
+                lookup.insert(key, *parser);
             }
         }
-        Self { lookup, parsers }
+        Ok(Self { lookup, parsers })
+    }
+
+    fn builtin() -> Result<Self, ScocError> {
+        Self::from_parsers(builtins())
     }
 
     pub fn parser_impl(&self, name: &str) -> Option<&'static dyn ScocParser> {
@@ -44,7 +69,9 @@ fn normalize_name(name: &str) -> String {
 
 pub fn registry() -> &'static ParserRegistry {
     static REGISTRY: OnceLock<ParserRegistry> = OnceLock::new();
-    REGISTRY.get_or_init(ParserRegistry::builtin)
+    REGISTRY.get_or_init(|| {
+        ParserRegistry::builtin().expect("SCOC builtin registry must be collision free")
+    })
 }
 
 pub fn parser(name: &str) -> Option<&'static ParserDescriptor> {
